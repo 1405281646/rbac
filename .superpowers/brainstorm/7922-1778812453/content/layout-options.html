@@ -1,0 +1,44 @@
+<h2>前端布局风格偏好</h2>
+<p class="subtitle">后台管理系统常见布局方案，请选择您偏好的风格</p>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>侧边栏导航（推荐）</h3>
+      <p>左侧菜单栏 + 右侧内容区。经典后台布局，Element Plus 原生支持</p>
+      <div class="mockup" style="margin-top:12px">
+        <div class="mockup-header">Logo | 用户信息</div>
+        <div style="display:flex;min-height:120px">
+          <div class="mock-sidebar" style="min-width:80px;flex:0 0 80px">菜单</div>
+          <div class="mock-content" style="flex:1;padding:8px">内容区域</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>顶部导航</h3>
+      <p>顶部菜单栏 + 内容区。适合菜单项较少的系统</p>
+      <div class="mockup" style="margin-top:12px">
+        <div class="mockup-header">Logo | 菜单1 | 菜单2 | 菜单3 | 用户</div>
+        <div style="min-height:120px;padding:8px">内容区域</div>
+      </div>
+    </div>
+  </div>
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>混合导航</h3>
+      <p>顶部一级菜单 + 左侧二级菜单。适合菜单层级深的复杂系统</p>
+      <div class="mockup" style="margin-top:12px">
+        <div class="mockup-header">Logo | 系统管理 | 业务管理 | 报表 | 用户</div>
+        <div style="display:flex;min-height:120px">
+          <div class="mock-sidebar" style="min-width:80px;flex:0 0 80px">二级菜单</div>
+          <div class="mock-content" style="flex:1;padding:8px">内容区域</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
